@@ -1,6 +1,6 @@
 <div class="card">
 
-    <div class="card--discount">{%DISCOUNT%}</div>
+    <div class="card--discount {%INPROMOTION%}">{%DISCOUNT-AMOUNT%}</div>
 
     <div class="card--emoji">
         {%IMAGE%} {%IMAGE%}
@@ -17,7 +17,7 @@
 
     <div class="devider-bottom"></div>
 
-    <a class="card--more">
+    <a class="card--more" href="/products?id={%ID%}">
         see more 👉
     </a>
 </div>

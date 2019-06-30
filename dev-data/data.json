@@ -6,16 +6,18 @@
         "quantity": "1 🎣",
         "price": "15",
         "discount": true,
+        "discountAmount": "-32%",
         "description": "A fishing rod is a long, flexible rod used to catch fish. At its simplest, a fishing rod is a simple stick or pole attached to a line ending in a hook (formerly known as an angle, hence the term angling). The length of the rod can vary between 2 and 20 feet (0.61 and 6.10 m). To entice fish, bait or lures are impaled on one or more hooks attached to the line. The line is generally stored on a reel which reduces tangles and assists in landing a fish."
     },
     {
         "id": 1,
         "productName": "fishing Thread",
-        "image": "🎣",
-        "quantity": "3 🎣",
+        "image": "🧵",
+        "quantity": "3 🧵",
         "price": "5.5",
         "discount": true,
-        "description": "The octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. Around 300 species are recognised, and the order is grouped within the class Cephalopoda with squids, cuttlefish, and nautiloids. Like other cephalopods, the octopus is bilaterally symmetric with two eyes and a beak, with its mouth at the center point of the eight limbs (traditionally called arms, also mistakenly called tentacles). The soft body can rapidly alter its shape."
+        "discountAmount": "-22%",
+        "description": "The striped bass fish has a striking appearance; sleek shape, black, broken lateral lines, white belly and bright silver scales. The flesh is firm, mild and has a similar flavor with fresh water bass.The striped bass produced in Florida are sold to white table cloth restaurants across the country and even in Europe. They have a firm texture, flaky and moist, white meat with simple flavor.When buying this, there are things you must consider"
     },
     {
         "id": 2,
@@ -24,7 +26,8 @@
         "quantity": "1KG 🦑",
         "price": "25",
         "discount": false,
-        "description": ""
+        "discountAmount": "0%",
+        "description": "The octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. Around 300 species are recognised, and the order is grouped within the class Cephalopoda with squids, cuttlefish, and nautiloids. Like other cephalopods, the octopus is bilaterally symmetric with two eyes and a beak, with its mouth at the center point of the eight limbs (traditionally called arms, also mistakenly called tentacles). The soft body can rapidly alter its shape."
     },
     {
         "id": 3 ,
@@ -33,6 +36,7 @@
         "quantity": "800g 🐟",
         "price": "11",
         "discount": true,
+        "discountAmount": "-68%",
         "description": "The striped bass fish has a striking appearance; sleek shape, black, broken lateral lines, white belly and bright silver scales. The flesh is firm, mild and has a similar flavor with fresh water bass.The striped bass produced in Florida are sold to white table cloth restaurants across the country and even in Europe. They have a firm texture, flaky and moist, white meat with simple flavor.When buying this, there are things you must consider."
     },
     {
@@ -42,15 +46,17 @@
         "quantity": "250g 🐍",
         "price": "5.5",
         "discount": false,
+        "discountAmount": "0%",
         "description": "now common earthworms and nightcrawlers are fair game. they are a bit slimy eaten live they taste like they smell but i would say they have a unique flavor. i have see chinese eat them mixed with scrambled eggs but i have never tried that myself. i have only ever eaten them raw. they feel funny moving in the mouth and if you can get past the ickyness of it they are not that bad you dont even have to chew them just let them slide right down."
     },
     {
-        "id": 6,
+        "id": 5,
         "productName": "Fishing gloves ",
         "image": "🧤",
         "quantity": "2 🧤",
         "price": "18",
-        "discount": true,
+        "discount": false,
+        "discountAmount": "0%",    
         "description": "f you’ve been fishing without gloves you probably already know the dangers of doing so firsthand. There are countless ways to get injured — a flailing fish sends a treble hook deep into your palm; careless handling of a catfish results in being stabbed by a venomous spine; or a filleting knife slips and cuts your finger to the bone. Fishing gloves safeguard you against such mishaps. Some are also meant for weather protection."
     }
 ]

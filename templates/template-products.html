@@ -148,6 +148,10 @@
             display: none;
         }
 
+        a {
+            text-decoration: none
+        }
+
     </style>
 </head>
 <body>
@@ -155,7 +159,7 @@
 
     <div class="card">
 
-        <div class="card--discount">{%DISCOUNT%}</div>
+        <div class="card--discount {%INPROMOTION%}">{%DISCOUNT-AMOUNT%}</div>
 
         <div class="card--image">
             <span class="card--image_emoji emoji--1">{%IMAGE%}</span>

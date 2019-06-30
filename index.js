@@ -18,25 +18,34 @@ const templateReplace = (template, product) => {
     output = output.replace(/{%IMAGE%}/g, product.image)
     output = output.replace(/{%QUANTITY%}/g, product.quantity)
     output = output.replace(/{%PRICE%}/g, product.price)
-    output = output.replace(/{%DISCOUNT%}/g, product.discount)
+    output = output.replace(/{%DISCOUNT-AMOUNT%}/g, product.discountAmount)
     output = output.replace(/{%ID%}/g, product.id)
     output = output.replace(/{%DESCRIPTION%}/g, product.description)
+
+    if (!product.discount) {
+        output = output.replace(/{%INPROMOTION%}/g, 'no-discount')
+    }
     
     return output
 }
 
 const server = http.createServer((req, res) => {
-    if(req.url === '/' || req.url === '/overview') {
+    const {query , pathname} = url.parse(req.url, true);
+
+    if(pathname === '/' || pathname === '/overview') {
 
         const output = dataObj.map( el => templateReplace(cards_template, el)).join('')
         const final = overview_template.replace(/{%CARDS%}/g, output);
         res.writeHead(200, {'Content-type' : 'text/html'});
         res.end(final);
 
-    }else if (req.url === '/products') {
+    }else if (pathname === '/products') {
+
+        const product = dataObj[query.id];
+        const output = templateReplace(products_template, product)
 
         res.writeHead(200, {'Content-type' : 'text/html'});
-        res.end(products_template);
+        res.end(output);
 
     }else {
         res.end('<h1>Page Note Found</h1>')
