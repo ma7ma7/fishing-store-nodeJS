@@ -144,6 +144,10 @@
             box-shadow: 2px 4px rgba(122, 122, 122, 0.418), -2px -4px rgba(122, 122, 122, 0.418)
         }
 
+        .no-discount {
+            display: none;
+        }
+
     </style>
 </head>
 <body>
@@ -151,28 +155,28 @@
 
     <div class="card">
 
-        <div class="card--discount">-50%</div>
+        <div class="card--discount">{%DISCOUNT%}</div>
 
         <div class="card--image">
-            <span class="card--image_emoji emoji--1">🐟</span>
-            <span class="card--image_emoji emoji--2">🐟</span>
-            <span class="card--image_emoji emoji--3">🐟</span>
-            <span class="card--image_emoji emoji--4">🐟</span>
-            <span class="card--image_emoji emoji--5">🐟</span>
-            <span class="card--image_emoji emoji--6">🐟</span>
+            <span class="card--image_emoji emoji--1">{%IMAGE%}</span>
+            <span class="card--image_emoji emoji--2">{%IMAGE%}</span>
+            <span class="card--image_emoji emoji--3">{%IMAGE%}</span>
+            <span class="card--image_emoji emoji--4">{%IMAGE%}</span>
+            <span class="card--image_emoji emoji--5">{%IMAGE%}</span>
+            <span class="card--image_emoji emoji--6">{%IMAGE%}</span>
         </div>
 
-        <h2 class="card--title">fishing taste</h2>
+        <h2 class="card--title">{%TITLE%}</h2>
 
         <div class="card--details">
-            <span class="card--price">Price : 15 &euro;</span>
-            <span class="card--quantity">250g 🐟 per 📦</span>
+            <span class="card--price">Price : {%PRICE%} &euro;</span>
+            <span class="card--quantity">{%QUANTITY%} per 📦</span>
         </div>
 
         <div class="devider-bottom"></div>
         
         <p class="card--description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequuntur quisquam veniam dolorum expedita, possimus porro sunt voluptate, maxime eligendi fugit non iusto nam natus at earum reiciendis aliquid obcaecati.Sint nemo eaque, porro quisquam et expedita cupiditate vero? Dolor quisquam corporis molestias tempora voluptate quidem velit ipsum minus corrupti nemo consequuntur sit sunt, perspiciatis ad? Obcaecati est quaerat sint!
+            {%DESCRIPTION%}
         </p>
         
         <div class="devider-bottom"></div>
