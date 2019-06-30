@@ -1,0 +1,19 @@
+{
+  "name": "fishing-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ma7ma7/fishing-store-nodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ma7ma7/fishing-store-nodeJS/issues"
+  },
+  "homepage": "https://github.com/ma7ma7/fishing-store-nodeJS#readme"
+}
