@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 🐟 Fishing Store 🐟</title>
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #c8d6e5;
+            font-family: 'Nunito', sans-serif;
+        }
+        h1 {
+            font-family: 'Megrim', cursive;
+            color: white;
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 5rem
+        }
+        .container {
+            width: 1320px;
+            margin: 0 auto;
+        }
+        .overview-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+        .card {
+            width: 390px;
+            background-color: white;
+            padding: 2rem;
+            box-sizing: border-box;
+            border-radius: 5px;
+            box-shadow: 0px 4px rgba(34, 34, 34, 0.212);
+            position: relative;
+            margin-bottom: 2rem
+        }
+        .card .card--emoji{
+            font-size: 5rem;
+            text-align: center;
+            padding: 2rem 0rem;
+            transform: rotate(-5deg)
+        }
+        .card .card--title{
+            background-color: #25CCF7;
+            padding: 1rem .5rem;
+            color: white;
+            font-size: 2.5rem;
+            font-family: 'Megrim', cursive;
+            font-weight: bold;
+            text-align: center;
+            clip-path: polygon(3% 0%, 100% 0, 97% 100%, 0% 100%);
+            position: relative;
+            width: 420px;
+            transform: translateX(-60px);
+        }
+
+        .card .card--details{
+            font-size: 1.5rem;
+            padding: 3rem 0rem;
+        }
+
+        .card .card--details .card--quantity,
+        .card .card--details .card--price {
+            position: relative;
+            display: block;
+            float: left;
+        }
+
+        .card .card--details .card--quantity {
+            float: right;
+        }
+
+        .card .card--more{
+            clear: both;
+            display: block;
+            background-color: #25CCF7;
+            width: 140px;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            padding: .2rem .4rem;
+            border-radius: 20px;
+            margin: 0rem auto;
+            margin-top: 1.5rem;
+            cursor: pointer
+        }
+        .card .devider-bottom {
+            border-bottom: 1px solid rgba(104, 104, 104, 0.637);
+            height: 2px;
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .card .card--discount {
+            width: 80px;
+            height: 46px;
+            padding-top: 15px;
+            position: relative; 
+            background: #eb4d4b;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            text-align: center;
+            text-transform: uppercase;
+            position: absolute;
+            right: 10px;
+            top: 0
+        }
+
+        .card .card--discount::after{
+            content: ' ';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 13px solid white;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+        }
+
+        .no-promotion {
+            display: none
+        }
+    </style>
+</head>
+<body>
+    <h1>🐠 Fishing Store 🎣</h1>
+
+    <div class="overview-cards container">
+
+        <div class="card">
+
+            <div class="card--discount">-50%</div>
+
+            <div class="card--emoji">
+                🎣 🎣
+            </div>
+
+            <div class="card--title">
+                fishing rod
+            </div>
+
+            <div class="card--details">
+                <span class="card--price">Price : 15 &euro;</span>
+                <span class="card--quantity">1 🎣 per 📦</span>
+            </div>
+
+            <div class="devider-bottom"></div>
+
+            <a class="card--more">
+                see more 👉
+            </a>
+        </div>
+
+        <div class="card">
+
+            <div class="card--discount">-43%</div>
+
+            <div class="card--emoji">
+                🧵     🧵 
+            </div>
+
+            <div class="card--title">
+                fishing Thread
+            </div>
+
+            <div class="card--details">
+                <span class="card--price">Price : 5.5 &euro;</span>
+                <span class="card--quantity">3 🎣 per 📦</span>
+            </div>
+
+            <div class="devider-bottom"></div>
+
+            <a class="card--more">
+                see more 👉
+            </a>
+        </div>
+
+
+        <div class="card">
+
+            <div class="card--discount">-90%</div>
+
+            <div class="card--emoji">
+                🐟 🐟
+            </div>
+
+            <div class="card--title">
+                fishing taste
+            </div>
+
+            <div class="card--details">
+                <span class="card--price">Price : 10 &euro;</span>
+                <span class="card--quantity">1Kg 🐟 per 📦</span>
+            </div>
+
+            <div class="devider-bottom"></div>
+
+            <a class="card--more">
+                see more 👉
+            </a>
+        </div>
+
+        <div class="card">
+
+            <div class="card--discount no-promotion">0%</div>
+
+            <div class="card--emoji">
+                🦑 🦑
+            </div>
+
+            <div class="card--title">
+                Octopus
+            </div>
+
+            <div class="card--details">
+                <span class="card--price">Price : 20 &euro;</span>
+                <span class="card--quantity">5 🦑 per 📦</span>
+            </div>
+
+            <div class="devider-bottom"></div>
+
+            <a class="card--more">
+                see more 👉
+            </a>
+        </div>
+
+        <div class="card">
+
+            <div class="card--discount">10%</div>
+
+            <div class="card--emoji">
+                🐍 🐍
+            </div>
+
+            <div class="card--title">
+                Worm taste
+            </div>
+
+            <div class="card--details">
+                <span class="card--price">Price : 12 &euro;</span>
+                <span class="card--quantity">250 g 🐍 per 📦</span>
+            </div>
+
+            <div class="devider-bottom"></div>
+
+            <a class="card--more">
+                see more 👉
+            </a>
+        </div>
+
+        <div class="card">
+
+            <div class="card--discount">33%</div>
+
+            <div class="card--emoji">
+                🧤 🧤
+            </div>
+
+            <div class="card--title">
+                Fishing gloves
+            </div>
+
+            <div class="card--details">
+                <span class="card--price">Price : 18 &euro;</span>
+                <span class="card--quantity">2 🧤 per 📦</span>
+            </div>
+
+            <div class="devider-bottom"></div>
+
+            <a class="card--more">
+                see more 👉
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>
